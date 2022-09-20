@@ -19,7 +19,7 @@ body{
     font-family: 'Mulish', sans-serif;
     overflow-x: hidden;
     color: var(--font-color);
-    background-image: url("/img/wp635619.jpg");
+    background-image: url(https://images.unsplash.com/photo-1595178302776-fa04e6d45879?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1886&q=80);
     background-repeat: no-repeat;
     background-size: cover;
 }
