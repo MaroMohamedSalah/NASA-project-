@@ -19,9 +19,7 @@ body{
     font-family: 'Mulish', sans-serif;
     overflow-x: hidden;
     color: var(--font-color);
-    background-image: url("/img/wp635619.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-color: black;
     z-index: 1;
 }
 a{
@@ -125,6 +123,9 @@ nav .container ul a:hover::after{
 }
 .intro{
     height: 100vh;
+    background-image: url(../img/ي.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .arrowToBottom{
     position: absolute;
