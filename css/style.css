@@ -19,7 +19,6 @@ body{
     font-family: 'Mulish', sans-serif;
     overflow-x: hidden;
     color: var(--font-color);
-    background-color: black;
     z-index: 1;
 }
 a{
@@ -104,6 +103,9 @@ nav .container .logo{
     margin-right: 80px;
     color: var(--font-color) ;
 }
+nav .container .logo img{
+    width: 39px;
+}
 nav .container ul a{
     color: var(--font-color) ;
     position: relative;
@@ -123,14 +125,16 @@ nav .container ul a:hover::after{
 }
 .intro{
     height: 100vh;
-    background-image: url(../img/ي.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://img.favpng.com/18/2/0/desktop-wallpaper-high-definition-television-desktop-computers-1080p-png-favpng-mM7hZ661D1xPK1iS8yGzAXWCx.jpg');
     background-repeat: no-repeat;
     background-size: cover;
 }
 .arrowToBottom{
     position: absolute;
     left: 50%;
-    bottom: 21px;
+    bottom: 90px;
     font-size: 33px;
     animation-name: up-and-down;
     animation-duration: 1.5s;
@@ -192,10 +196,18 @@ nav .container ul a:hover::after{
     }
 /* Start OverAll style */
 .overAll{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/3e3f0fad-8340-4f18-83bc-622f04342de0/d2wwb2s-94c0c986-6d56-4328-9da3-bb8fbc17eefa.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzNlM2YwZmFkLTgzNDAtNGYxOC04M2JjLTYyMmYwNDM0MmRlMFwvZDJ3d2Iycy05NGMwYzk4Ni02ZDU2LTQzMjgtOWRhMy1iYjhmYmMxN2VlZmEucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.LcDotDvjHC2X_WqS0xXiR2qSqfoHLKBH9fFFCkrShUo');
     padding-top: var(--section-padding-top);
-    position: relative;
     min-height: 100vh;
     padding-bottom: 123px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.overAll .container{
     transform: translateY(55px);
     opacity: 0;
     transition: all 0.75s ease-in-out;
@@ -213,6 +225,9 @@ nav .container ul a:hover::after{
     }
 /* Start problems style  */
 .problems{
+    background-image: url('https://freepngimg.com/thumb/space/2-2-space-free-png-image.png');
+    background-repeat: no-repeat;
+    background-size: cover;
     padding-top: var(--section-padding-top);
     /* height: 100vh; */
     min-height: 100vh;

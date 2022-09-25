@@ -1,0 +1,128 @@
+:root{
+    --font-color : #fdfdff;
+    --backGround : #1c59ba;
+    --secondBack : #031956;
+    --section-padding-top : 10px ; 
+}
+
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    position: relative;
+    font-family: 'Mulish', sans-serif;
+    overflow-x: hidden;
+    color: var(--font-color);
+    z-index: 1;
+    background-image: url('https://images.hdqwalls.com/wallpapers/scifi-astronaut-space-mars-is.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+a{
+  text-decoration: none;
+}
+ul{
+  list-style: none;
+}
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+    /* Small */
+    @media (min-width: 768px) {
+        .container {
+            width: 750px;
+        }
+    }
+      /* Medium */
+    @media (min-width: 992px) {
+        .container {
+            width: 970px;
+        }
+    }
+      /* Large */
+    @media (min-width: 1200px) {
+        .container {
+            width: 1170px ;
+        }
+    }
+/* change scroll bar */
+/* width */
+::-webkit-scrollbar {
+    width: 11px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px var(--backGround);
+    border-radius: 10px;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: var(--secondBack);
+    border-radius: 3px;
+  }
+  /* ::-webkit-scrollbar-thumb:hover{
+    background: #1976d2;
+  } */
+.overlay{
+    z-index: -1;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #03195666;
+}
+body .container .problemTitle{
+    text-align: center;
+    padding: 42px;
+    color: var(--font-color);
+    margin: 0;
+}
+body .container .sec{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 72vh;
+    flex-direction: row-reverse
+}
+body .container .sec .body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    min-height: inherit;
+}
+body .container .sec .body p{
+    font-size: 21px;
+    line-height: 1.3;
+}
+body .container .sec .body h3{
+    color: yellow;
+}
+body .container .sec img{
+    width: 359px;
+    box-shadow: var(--secondBack) 2.4px 2.4px 3.2px;
+    border-radius: 2px;
+}
+
+
+@media only screen and (max-width: 768px){
+    body .container .sec img{
+        display: none;
+    }
+    body .container .sec .body {
+        gap: 33px;
+        padding: 24px;
+    }
+}
